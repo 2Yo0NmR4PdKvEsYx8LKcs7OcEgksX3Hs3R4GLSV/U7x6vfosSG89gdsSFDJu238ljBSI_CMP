@@ -23,10 +23,10 @@ jobs:
     # Runs a single command using the runners shell
     - name: Test Install h3ping
       run: |
-        apt update
-        apt install hping3
+        sudo apt update
+        sudo apt install hping3
 
     # Runs a set of commands using the runners shell
     - name: Test h3ping
       run: |
-        hping3 --help
+        sudo hping3 --help
